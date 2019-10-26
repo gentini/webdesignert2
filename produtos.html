@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Produtos</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="center">
+      <h1>PetShop Cão Amigo</h1>
+
+      <a href="#" class="menu">
+        <i class="fa fa-bars"></i>
+      </a>
+
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="contato.html">Contato</a>
+        <a href="banhoetosa.html" class="nav-btn">Banho e Tosa</a>
+      </nav>
+    </div>
+  </header>
+  <br>
+
+  <center><h2>Produtos</h2></center>
+  <br>
+
+  <div class="produtos">
+  <table class="tresp" border="0"">
+    <thead>
+          <tr>
+              <th >Porte</th>
+              <th colspan="2">Marca</th>
+              <th >Preço</th>
+          </tr>
+    </thead>
+          <tr>
+              <td  rowspan="2"><br><br><br><br><br><br>Pequeno</td>
+              <td ><br><br><br>Pedigree</td>
+              <td ><img src="img/produto racao.png" alt="Ração Cão Pequeno" width="150" height="150"></td>
+              <td><br><br><br>R$30,00</td>
+          </tr>
+          <tr>
+              <td ><br><br><br>Pedigree</td>
+              <td ><img src="img/produto racao.png" alt="Ração Cão Pequeno" width="150" height="150"></td>
+              <td ><br><br><br>R$40,00</td>
+          </tr>
+          <tr>
+              <td  rowspan="2"><br><br><br><br><br><br>Médio</td>
+              <td ><br><br><br>Pedigree</td>
+              <td ><img src="img/produto racao.png" alt="Ração Cão Pequeno" width="150" height="150"></td>
+              <td ><br><br><br>R$45,00</td>
+          </tr>
+          <tr>
+              <td ><br><br><br>Pedigree</td>
+              <td ><img src="img/produto racao.png" alt="Ração Cão Pequeno" width="150" height="150"></td>
+              <td ><br><br><br>R$48,00</td>
+          </tr>
+          <tr>
+              <td rowspan="2"><br><br><br><br><br><br>Grande</td>
+              <td ><br><br><br>Pedigree</td>
+              <td ><img src="img/produto racao.png" alt="Ração Cão Pequeno" width="150" height="150"></td>
+              <td ><br><br><br>R$55,00</td>
+          </tr>
+          <tr>
+              <td ><br><br><br>Pedigree</td>
+              <td ><img src="img/produto racao.png" alt="Ração Cão Pequeno" width="150" height="150"></td>
+              <td ><br><br><br>R$60,00</td>
+          </tr>
+          <tr>
+              <td  colspan="4">Consulte nossos preços
+                  para grandes quantidades</td>
+          </tr>
+      </table>
+    </div>
+      <br><br>
+
+  <footer>   
+    
+    <span>
+      <i class="fab fa-whatsapp"> (17)99999-9999</i>
+    </span>
+    <span>
+      <i class="fab fa-facebook"> facecebook/caoamigo</i>
+    </span>
+    <span>
+      <i class="fab fa-instagram"> @caoamigo</i>
+    </span>
+    
+    
+  </footer>
+
+  <script>
+    const menu = document.querySelector('.menu');
+    menu.addEventListener('click', function() {
+      this.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

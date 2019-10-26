@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contato</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="center">
+      <h1>PetShop Cão Amigo</h1>
+
+      <a href="#" class="menu">
+        <i class="fa fa-bars"></i>
+      </a>
+
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="contato.html">Contato</a>
+        <a href="banhoetosa.html" class="nav-btn">Banho e Tosa</a>
+      </nav>
+    </div>
+  </header>
+  <br>
+  <center><h2>Contato</h2></center>
+  <br><br>
+   
+  
+    <form class="contato">      
+        
+          <label class="nome" for="nome">Nome</label><br>
+          <input class="lblnome" name="nome" id="nome"
+            placeholder="Digite o nome completo" />
+         <br><br>
+        
+          <label class="tel" for="tel">Tel/Cel</label><br>
+          <input class="lbltel" name="tel" id="tel"  placeholder="99 99999-9999" />
+         <br><br>
+        
+          <label class="email" for="email">Email</label><br>
+          <input class="lblemail" name="email" id="email" 
+            placeholder="Digite o endereço de e-mail" />
+         <br><br>
+        <label class="assunto">Assunto</label> <br>
+          <textarea class="textoassunto"  name="q_obs" id="q_obs" placeholder="Digite o assunto desejado" cols="65" rows="20"></textarea>
+        <br><br>
+  
+        <input  class="botao" type="submit" value="Enviar" />       
+  
+      
+      
+      </form>
+    </form>
+  
+  <br><br>
+  <br>
+
+  <footer>   
+    
+    <span>
+      <i class="fab fa-whatsapp"> (17)99999-9999</i>
+    </span>
+    <span>
+      <i class="fab fa-facebook"> facecebook/caoamigo</i>
+    </span>
+    <span>
+      <i class="fab fa-instagram"> @caoamigo</i>
+    </span>
+    
+    
+  </footer>
+
+  <script>
+    const menu = document.querySelector('.menu');
+    menu.addEventListener('click', function() {
+      this.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Banho e Tosa</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="center">
+      <h1>PetShop Cão Amigo</h1>
+
+      <a href="#" class="menu">
+        <i class="fa fa-bars"></i>
+      </a>
+
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="contato.html">Contato</a>
+        <a href="banhoetosa.html" class="nav-btn">Banho e Tosa</a>
+      </nav>
+    </div>
+  </header>
+  
+  <center><h1>Agendamento para banho e tosa</h1></center>
+  <br>
+  
+  <center><h3>Faça o seu agendamento com pelo menos 48 horas de antecedência</h3></center>
+  <br>
+
+  <!-- Formulario -->
+  <form class="banhoetosa"  method="POST" id="contato" action="obrigado.html">
+    
+      <hr>
+     
+      <center><h3>Identificação do dono do animal</h3></center>     
+
+      <br>
+        <label class="lblnome_dono" for="nome_dono">Nome</label><br>
+        <input class="nome_dono"name="nome_dono" id="nome_dono" size="50" maxlength="100"
+           placeholder="Digite o nome completo do dono do animal" />
+           <br><br>
+      
+      
+        <label class="lblendereco_dono" for="endereco">Endereço</label><br>
+        <input class="endereco_dono" name="endereco" id="endereco" size="80" maxlength="60" placeholder="Digite o endereço" />
+        <br><br>
+      
+        <label class= "lblcep" for="cep">CEP</label><br>
+        <input class="cep_dono" name="cep" id="cep" size="10" maxlength="9" placeholder="XXXXX-XXX" />
+        <br><br>
+      
+        <label class="lblemai_donol" for="email">Email</label><br>
+        <input class="email_dono"  name="email_dono" id="email_dono" size="80" maxlength="60"
+          placeholder="Digite o endereço de e-mail" />
+        <br><br>
+      
+        <label class="lbltel_dono" for="tel_dono">Tel/Cel</label><br>
+        <input class="tel_dono"  name="tel_dono" id="tel_dono" size="12" maxlength="13" placeholder="99 99999-9999" />
+        <br><br>
+    
+        <hr>
+        <center><h3>Identificação do animal</h3></center>
+        
+        <label class="lblnome_animal" for="nome_animal">Nome do animal</label><br>
+        <input  class="nome_animal"   name="nome_animal" id="nome_animal" size="25" maxlength="40"
+          placeholder="Digite o nome do animal" />
+        <br><br>
+      
+        <label class="lblporte_animal" for="porte_animal">Porte do Animal:</label><br>
+        <input  type="radio" name="porte_animal" id="animal_pequeno"
+        value="animal_pequeno" checked>Pequeno <br>
+        <input  type="radio" name="porte_animal" id="animal_medio" 
+        value="animal_medio">Médio <br>
+        <input  type="radio" name="porte_animal" id="animal_grande" 
+        value="animal_grande">Grande <br><br>
+      
+
+      
+        <label class="lbltipo_tosa" for="tipo_tosa">Tipo de tosa</label><br>
+        <select name="tipo_tosa" id="tipo_tosa">
+          <option value="">Nenhuma</option>
+          <option value="padrao">Tosa Padrão</option>
+          <option value="higienica">Tosa Higiênica</option>
+          <option value="tesoura">Tosa na Tesoura</option>
+          <option value="raca">Tosa da Raça</option>
+          <option value="bebe">Tosa Bebê</option>
+        </select>
+        <br><br>
+      
+
+      <label class="lblobs">Observações </label><br>
+      <textarea class="textobs"  name="obs" id="obs" placeholder="Digite o assunto desejado" cols="65" rows="10"></textarea>    
+        <br><br>  
+        <hr>  
+      <center><h3>        
+        Horário - (Não atendemos aos domingos e às segundas-feiras)
+        </h3></center> 
+       <label class="lblindique">Indique os dias da semana de sua preferência: </label><br>
+        <input type="checkbox" name="semana" value="idterca"/>
+        Terça-feira
+        <input type="checkbox" name="semana" value="idquarta"/>
+        Quarta-feira
+        <input type="checkbox" name="semana" value="idquinta"/>
+        Quinta-feira
+        <input type="checkbox" name="semana" value="idsexta"/>
+        Sexta-feira 
+        <br><br>                       
+      
+
+      <label class="lblop1hr">Primeira opção de horário</label>
+        <input type="date" name="Pdata" id="Pdata">
+        <br>
+      
+        <label class="lblop2hr">Segunda opção de horário</label>
+        <input type="date" name="Sdata" id="Sdata">
+        <br><br>
+         
+
+    <input class="btenviar_banhoetosa" type="submit" value="Enviar" />
+  </div>
+  </form>
+</div>
+  <br>  
+
+
+  <footer>   
+    
+    <span>
+      <i class="fab fa-whatsapp"> (17)99999-9999</i>
+    </span>
+    <span>
+      <i class="fab fa-facebook"> facecebook/caoamigo</i>
+    </span>
+    <span>
+      <i class="fab fa-instagram"> @caoamigo</i>
+    </span>
+    
+    
+  </footer>
+
+  <script>
+    const menu = document.querySelector('.menu');
+    menu.addEventListener('click', function() {
+      this.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

@@ -34,10 +34,6 @@ a {
   color: inherit;
 }
 
-::selection {
-  background: #7159c1;
-  color: #fff;
-}
 
 .center {
   width: 100%;
@@ -90,15 +86,7 @@ header nav a.active {
   font-weight: 700;
 }
 
-header nav a.active:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  left: 0;
-  bottom: -2px;
-  background: #0fcac6;
-}
+
 
 header nav a.nav-btn {
   background: #FFAB37;
@@ -344,12 +332,6 @@ header nav a.nav-btn:hover {
   margin-right: 8px;
 }
 
-@media (max-width: 1080px) {
-  .dicas img {
-    width: 50%;
-  }
-}
-
 
 @media (max-width: 720px) {
   .dicas {
@@ -440,7 +422,7 @@ header nav a.nav-btn:hover {
 }
 
 .brinquedos-info div {
-  flex: 1;
+  flex: 1;    /* deixar divs divididas uniformemente */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -462,11 +444,6 @@ header nav a.nav-btn:hover {
   font-size: 1.5rem;
   margin-top: .3rem;
 }
-
-@media (max-width: 1080px) {
-  .brinquedos-wrapper {
-    width: 50%;
-  }
 
   .brinquedos {
     padding: 4rem 0;
@@ -514,13 +491,6 @@ header nav a.nav-btn:hover {
   display: block;
   margin-left: 120px;  
  
-}
-
-
-@media (max-width: 1080px) {
-  .blog {
-    padding: 5rem 0 7rem;  }  
-
 }
 
 
@@ -775,7 +745,6 @@ footer span{
     background-color: whitesmoke; 
     width: 90%;
 }
-
 
 
 
